@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambare - Compras / Proveedores</title>
+    <link rel="stylesheet" href="/styles/colors.css">
+    <link rel="stylesheet" href="/styles/estilo_general.css">
+    <link rel="stylesheet" href="/styles/layout.css">
+    <link rel="stylesheet" href="/styles/estilos_comunes.css">
+    <link rel="stylesheet" href="/styles/pages_styles/compras.css">
+</head>
+<body>
+
+    <!-- Barra superior -->
+    <div class="barra_superior">
+        <div class="logo">GAMBARE</div>
+        <div class="bar_busqueda"><input type="text" placeholder="Buscar..."></div>
+        <div class="bar_dir_derecha">
+            <div class="notificaciones">🔔</div>
+            <div class="info_usuario">
+                <div class="nombre_usuario">Usuario basico</div>
+                <div class="rol_usuario_info">Almacenista</div>
+            </div>
+            <div class="foto_usuario">U</div>
+        </div>
+    </div>
+
+    <div class="layout">
+
+        <!-- Barra lateral -->
+        <div class="bar_izquierda">
+            <ul class="izq_lista">
+                <li class="izq_item"><a href="/home">Home</a></li>
+                <li class="izq_item"><a href="/inventario">Inventario</a></li>
+                <li class="izq_item active"><a href="/compras">Compras / Proveedores</a></li>
+                <li class="izq_item">Producción</li>
+                <li class="izq_item">Ventas / Pedidos</li>
+                <li class="izq_item">Clientes</li>
+                <li class="izq_item">Contáctenos</li>
+            </ul>
+            <div class="izq_footer">
+                <div class="izq_item">Perfil / Configuración</div>
+                <div class="izq_item">Cerrar sesión</div>
+            </div>
+        </div>
+
+        <!-- Contenido principal -->
+        <div class="contenido">
+
+            <!-- Encabezado -->
+            <div class="pagina_encabezado">
+                <div class="pagina_titulo">
+                    <h1>Compras / Proveedores</h1>
+                </div>
+                <button class="btn_primario">+ Nueva solicitud</button>
+            </div>
+
+            <!-- Resumen -->
+            <div class="resumen_grid">
+                <div class="resumen_tarjeta">
+                    <div class="resumen_icono morado">📦</div>
+                    <div>
+                        <div class="resumen_numero">12</div>
+                        <div class="resumen_texto">Solicitudes activas</div>
+                    </div>
+                </div>
+                <div class="resumen_tarjeta">
+                    <div class="resumen_icono azul">📄</div>
+                    <div>
+                        <div class="resumen_numero">5</div>
+                        <div class="resumen_texto">Cotizaciones pendientes</div>
+                    </div>
+                </div>
+                <div class="resumen_tarjeta">
+                    <div class="resumen_icono verde">🤝</div>
+                    <div>
+                        <div class="resumen_numero">8</div>
+                        <div class="resumen_texto">Proveedores registrados</div>
+                    </div>
+                </div>
+                <div class="resumen_tarjeta">
+                    <div class="resumen_icono rojo">⚠</div>
+                    <div>
+                        <div class="resumen_numero">2</div>
+                        <div class="resumen_texto">Alertas de cotización</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pestañas -->
+            <div class="pestaña_barra">
+                <div class="pestaña_item pestaña_activa">Solicitudes</div>
+                <div class="pestaña_item">Cotizaciones</div>
+                <div class="pestaña_item">Proveedores</div>
+                <div class="pestaña_item">Recepción de materiales</div>
+                <div class="pestaña_item">Validación</div>
+            </div>
+
+            <!-- Filtros -->
+            <div class="filtros_fila">
+                <div class="filtro_grupo grupo_busqueda">
+                    <input type="text" placeholder="🔍 Buscar proveedor o material...">
+                </div>
+                <div class="filtro_grupo">
+                    <label>Categoría</label>
+                    <select>
+                        <option>Todas</option>
+                    </select>
+                </div>
+                <div class="filtro_grupo">
+                    <label>Estado</label>
+                    <select>
+                        <option>Todos</option>
+                    </select>
+                </div>
+                <button class="btn_filtro">☷ Filtros</button>
+            </div>
+
+            <!-- Tabla -->
+            <div class="tabla_contenedor">
+                <table class="tabla">
+                    <thead class="tabla_encabezado">
+                        <tr>
+                            <th>Código</th>
+                            <th>Proveedor</th>
+                            <th>Material solicitado</th>
+                            <th>Fecha de envío</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tabla_fila">
+                            <td>SOL-001</td>
+                            <td>Textiles Andinos</td>
+                            <td>Algodón Premium (50m)</td>
+                            <td>12/09/2026</td>
+                            <td><span class="estado estado_azul">Enviado</span></td>
+                            <td class="acciones">
+                                <button class="icono_boton">👁</button>
+                                <button class="icono_boton">✎</button>
+                            </td>
+                        </tr>
+                        <tr class="tabla_fila">
+                            <td>SOL-002</td>
+                            <td>Insumos Bogotá</td>
+                            <td>Tinta Negra (30 uds)</td>
+                            <td>10/09/2026</td>
+                            <td><span class="estado estado_amarillo">Pendiente</span></td>
+                            <td class="acciones">
+                                <button class="icono_boton">👁</button>
+                                <button class="icono_boton">✎</button>
+                            </td>
+                        </tr>
+                        <tr class="tabla_fila">
+                            <td>SOL-003</td>
+                            <td>Vinilos SAS</td>
+                            <td>Vinilo Textil (40m)</td>
+                            <td>08/09/2026</td>
+                            <td><span class="estado estado_verde">Recibido</span></td>
+                            <td class="acciones">
+                                <button class="icono_boton">👁</button>
+                                <button class="icono_boton">✎</button>
+                            </td>
+                        </tr>
+                        <tr class="tabla_fila">
+                            <td>SOL-004</td>
+                            <td>Hilos del Valle</td>
+                            <td>Hilo Poliéster (60 uds)</td>
+                            <td>05/09/2026</td>
+                            <td><span class="estado estado_rojo">Rechazado</span></td>
+                            <td class="acciones">
+                                <button class="icono_boton">👁</button>
+                                <button class="icono_boton">✎</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Paginación -->
+                <div class="paginacion">
+                    <button class="pagina_boton">&lt;</button>
+                    <button class="pagina_boton pagina_activa">1</button>
+                    <button class="pagina_boton">2</button>
+                    <button class="pagina_boton">3</button>
+                    <span class="pagina_puntos">...</span>
+                    <button class="pagina_boton">16</button>
+                    <button class="pagina_boton">&gt;</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+</html>

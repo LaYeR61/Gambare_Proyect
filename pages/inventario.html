@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambare - Inventario</title>
+    <link rel="stylesheet" href="/styles/colors.css">
+    <link rel="stylesheet" href="/styles/estilo_general.css">
+    <link rel="stylesheet" href="/styles/layout.css">
+    <link rel="stylesheet" href="/styles/estilos_comunes.css">
+    <link rel="stylesheet" href="/styles/pages_styles/inventario.css">
+</head>
+<body>
+
+    <!-- Barra superior -->
+    <div class="barra_superior">
+        <div class="logo">GAMBARE</div>
+        <div class="bar_busqueda"><input type="text" placeholder="Buscar..."></div>
+        <div class="bar_dir_derecha">
+            <div class="notificaciones">🔔</div>
+            <div class="info_usuario">
+                <div class="nombre_usuario">Usuario basico</div>
+                <div class="rol_usuario_info">Almacenista</div>
+            </div>
+            <div class="foto_usuario">U</div>
+        </div>
+    </div>
+
+    <div class="layout">
+
+        <!-- Barra lateral -->
+        <div class="bar_izquierda">
+            <ul class="izq_lista">
+                <li class="izq_item"><a href="/home">Home</a></li>
+                <li class="izq_item active"><a href="/inventario">Inventario</a></li>
+                <li class="izq_item"><a href="/compras">Compras / Proveedores</a></li>
+                <li class="izq_item">Producción</li>
+                <li class="izq_item">Ventas / Pedidos</li>
+                <li class="izq_item">Clientes</li>
+                <li class="izq_item">Contáctenos</li>
+            </ul>
+            <div class="izq_footer">
+                <div class="izq_item">Perfil / Configuración</div>
+                <div class="izq_item">Cerrar sesión</div>
+            </div>
+        </div>
+
+        <!-- Contenido principal -->
+        <div class="contenido">
+
+            <!-- Encabezado -->
+            <div class="pagina_encabezado">
+                <div class="pagina_titulo">
+                    <h1>Inventario</h1>
+                </div>
+                <button class="btn_primario">+ Registrar material</button>
+            </div>
+
+            <!-- Resumen -->
+            <div class="resumen_grid">
+                <div class="resumen_tarjeta">
+                    <div class="resumen_icono morado">🧵</div>
+                    <div>
+                        <div class="resumen_numero">128</div>
+                        <div class="resumen_texto">Materiales registrados</div>
+                    </div>
+                </div>
+                <div class="resumen_tarjeta">
+                    <div class="resumen_icono verde">✔</div>
+                    <div>
+                        <div class="resumen_numero">86</div>
+                        <div class="resumen_texto">En stock suficiente</div>
+                    </div>
+                </div>
+                <div class="resumen_tarjeta">
+                    <div class="resumen_icono amarillo">⚠</div>
+                    <div>
+                        <div class="resumen_numero">6</div>
+                        <div class="resumen_texto">Con stock bajo</div>
+                    </div>
+                </div>
+                <div class="resumen_tarjeta">
+                    <div class="resumen_icono rojo">🛑</div>
+                    <div>
+                        <div class="resumen_numero">3</div>
+                        <div class="resumen_texto">Sin stock</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pestañas -->
+            <div class="pestaña_barra">
+                <div class="pestaña_item pestaña_activa">Inventario disponible</div>
+                <div class="pestaña_item">Informe diario</div>
+                <div class="pestaña_item">Alertas de stock bajo</div>
+                <div class="pestaña_item">Clasificación</div>
+                <div class="pestaña_item">Actualizar stock</div>
+            </div>
+
+            <!-- Filtros -->
+            <div class="filtros_fila">
+                <div class="filtro_grupo grupo_busqueda">
+                    <input type="text" placeholder="🔍 Buscar material...">
+                </div>
+                <div class="filtro_grupo">
+                    <label>Categoría</label>
+                    <select>
+                        <option>Todas</option>
+                    </select>
+                </div>
+                <div class="filtro_grupo">
+                    <label>Estado</label>
+                    <select>
+                        <option>Todos</option>
+                    </select>
+                </div>
+                <button class="btn_filtro">☷ Filtros</button>
+            </div>
+
+            <!-- Tabla -->
+            <div class="tabla_contenedor">
+                <table class="tabla">
+                    <thead class="tabla_encabezado">
+                        <tr>
+                            <th>Código</th>
+                            <th>Material</th>
+                            <th>Categoría</th>
+                            <th>Stock actual</th>
+                            <th>Stock mínimo</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tabla_fila">
+                            <td>MAT-001</td>
+                            <td>Algodón Premium</td>
+                            <td>Tela</td>
+                            <td>45 m</td>
+                            <td>20 m</td>
+                            <td><span class="estado estado_verde">Suficiente</span></td>
+                            <td class="acciones">
+                                <button class="icono_boton">👁</button>
+                                <button class="icono_boton">✎</button>
+                            </td>
+                        </tr>
+                        <tr class="tabla_fila">
+                            <td>MAT-002</td>
+                            <td>Tinta Negra</td>
+                            <td>Insumo</td>
+                            <td>8 uds</td>
+                            <td>10 uds</td>
+                            <td><span class="estado estado_amarillo">Bajo</span></td>
+                            <td class="acciones">
+                                <button class="icono_boton">👁</button>
+                                <button class="icono_boton">✎</button>
+                            </td>
+                        </tr>
+                        <tr class="tabla_fila">
+                            <td>MAT-003</td>
+                            <td>Papel Transfer</td>
+                            <td>Insumo</td>
+                            <td>0 uds</td>
+                            <td>5 uds</td>
+                            <td><span class="estado estado_rojo">Agotado</span></td>
+                            <td class="acciones">
+                                <button class="icono_boton">👁</button>
+                                <button class="icono_boton">✎</button>
+                            </td>
+                        </tr>
+                        <tr class="tabla_fila">
+                            <td>MAT-004</td>
+                            <td>Hilo Poliéster</td>
+                            <td>Hilo</td>
+                            <td>32 uds</td>
+                            <td>15 uds</td>
+                            <td><span class="estado estado_verde">Suficiente</span></td>
+                            <td class="acciones">
+                                <button class="icono_boton">👁</button>
+                                <button class="icono_boton">✎</button>
+                            </td>
+                        </tr>
+                        <tr class="tabla_fila">
+                            <td>MAT-005</td>
+                            <td>Vinilo Textil</td>
+                            <td>Insumo</td>
+                            <td>12 m</td>
+                            <td>10 m</td>
+                            <td><span class="estado estado_verde">Suficiente</span></td>
+                            <td class="acciones">
+                                <button class="icono_boton">👁</button>
+                                <button class="icono_boton">✎</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Paginación -->
+                <div class="paginacion">
+                    <button class="pagina_boton">&lt;</button>
+                    <button class="pagina_boton pagina_activa">1</button>
+                    <button class="pagina_boton">2</button>
+                    <button class="pagina_boton">3</button>
+                    <span class="pagina_puntos">...</span>
+                    <button class="pagina_boton">16</button>
+                    <button class="pagina_boton">&gt;</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+</html>

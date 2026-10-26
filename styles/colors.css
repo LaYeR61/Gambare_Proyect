@@ -1,0 +1,18 @@
+:root {
+  --morado-oscuro: #2e1a47;
+  --morado: #5b2a86;
+  --morado-input: #6e3aa0;
+  --fondo: #f4f5f9;
+  --texto-oscuro: #1e1e2d;
+  --texto-gris: #6b7280;
+  --blanco: #ffffff;
+  --rojo: #e53935;
+  --verde: #16a34a;
+  --verde-bg: #dcfce7;
+  --amarillo: #d97706;
+  --amarillo-bg: #fef3c7;
+  --rojo-bg: #fee2e2;
+  --azul: #2563eb;
+  --azul-bg: #dbeafe;
+  --borde: #e2e8f0;
+}

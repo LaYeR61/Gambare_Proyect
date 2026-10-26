@@ -1,0 +1,55 @@
+/* Contenido */
+.contenido {
+  flex: 1;
+  padding: 32px 40px;
+  background: var(--fondo);
+}
+
+.contenido_titulo h1 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.contenido_titulo p {
+  color: var(--texto-gris);
+  font-size: 13px;
+  margin-bottom: 24px;
+}
+
+/* Tarjetas */
+.tarjetas_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.tarjeta {
+  background: var(--blanco);
+  padding: 20px 22px;
+  border-left: 6px solid transparent;
+}
+
+.tarjeta h3 {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.tarjeta ul {
+  list-style: none;
+  font-size: 12px;
+  color: #475569;
+}
+
+.tarjeta li {
+  margin-bottom: 6px;
+  padding-left: 14px;
+  position: relative;
+}
+
+/* Colores de tarjetas */
+.tarjeta_inventario  { border-left-color: #7c3aed; }
+.tarjeta_compras     { border-left-color: #2563eb; }
+.tarjeta_produccion  { border-left-color: #0ea5e9; }
+.tarjeta_ventas      { border-left-color: #059669; }
+.tarjeta_clientes    { border-left-color: #db2777; }
+.tarjeta_accesos     { border-left-color: #475569; }

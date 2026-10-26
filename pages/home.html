@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambare - Home</title>
+    <link rel="stylesheet" href="/styles/colors.css">
+    <link rel="stylesheet" href="/styles/estilo_general.css">
+    <link rel="stylesheet" href="/styles/layout.css">
+    <link rel="stylesheet" href="/styles/pages_styles/home.css">
+</head>
+<body>
+
+    <!-- Barra superior -->
+    <div class="barra_superior">
+        <div class="logo">GAMBARE</div>
+        <div class="bar_busqueda"><input type="text" placeholder="Buscar..."></div>
+        <div class="bar_dir_derecha">
+            <div class="notificaciones">🔔</div>
+            <div class="info_usuario">
+                <div class="nombre_usuario">Usuario basico</div>
+                <div class="rol_usuario_info">Almacenista</div>
+            </div>
+            <div class="foto_usuario">U</div>
+        </div>
+    </div>
+
+    <div class="layout">
+
+        <!-- Barra izquierda -->
+        <div class="bar_izquierda">
+            <ul class="izq_lista">
+                <li class="izq_item active"><a href="/home">Home</a></li>
+                <li class="izq_item"><a href="/inventario">Inventario</a></li>
+                <li class="izq_item"><a href="/compras">Compras / Proveedores</a></li>
+                <li class="izq_item">Producción</li>
+                <li class="izq_item">Ventas / Pedidos</li>
+                <li class="izq_item">Clientes</li>
+                <li class="izq_item">Contáctenos</li>
+            </ul>
+            <div class="izq_footer">
+                <div class="izq_item">Perfil / Configuración</div>
+                <div class="izq_item">Cerrar sesión</div>
+            </div>
+        </div>
+
+        <!-- Contenido -->
+        <div class="contenido">
+
+            <div class="contenido_titulo">
+                <h1>Bienvenido, Usuario</h1>
+            </div>
+
+            <!-- Tarjetas -->
+            <div class="tarjetas_grid">
+                <div class="tarjeta tarjeta_inventario">
+                    <h3>Inventario</h3>
+                    <ul>
+                        <li>128 materiales registrados</li>
+                        <li>6 con alerta de stock bajo</li>
+                    </ul>
+                </div>
+
+                <div class="tarjeta tarjeta_compras">
+                    <h3>Compras / Proveedores</h3>
+                    <ul>
+                        <li>5 cotizaciones pendientes</li>
+                        <li>2 proveedores por validar</li>
+                    </ul>
+                </div>
+
+                <div class="tarjeta tarjeta_produccion">
+                    <h3>Producción</h3>
+                    <ul>
+                        <li>12 diseños activos</li>
+                        <li>4 estampados en proceso</li>
+                    </ul>
+                </div>
+
+                <div class="tarjeta tarjeta_ventas">
+                    <h3>Ventas / Pedidos</h3>
+                    <ul>
+                        <li>9 pedidos pendientes de entrega</li>
+                        <li>3 pagos por verificar</li>
+                    </ul>
+                </div>
+
+                <div class="tarjeta tarjeta_clientes">
+                    <h3>Clientes</h3>
+                    <ul>
+                        <li>42 clientes registrados</li>
+                        <li>5 nuevas reseñas</li>
+                    </ul>
+                </div>
+
+                <div class="tarjeta tarjeta_accesos">
+                    <h3>Accesos rápidos</h3>
+                    <ul>
+                        <li>+ Registrar material</li>
+                        <li>+ Nuevo pedido</li>
+                        <li>Ver Contáctenos</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
